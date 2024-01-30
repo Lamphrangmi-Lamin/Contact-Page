@@ -125,6 +125,7 @@ button {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 1fr 3fr 1fr;
         column-gap: 1.2rem;
+        padding: 2rem;
     }
 
     .grid-item:nth-child(1) {
@@ -149,5 +150,13 @@ button {
 
     .grid-item:nth-child(6) {
         grid-column-start: span 2;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .grid-container {
+        max-width: 55%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
